@@ -1,0 +1,130 @@
+.info {
+  width: 80%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00759a;
+  }
+}
+
+.table-data-container {
+  font-size: 1.8rem;
+  width: 80%;
+  min-height: 60vh;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
+}
+
+.table-data {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.8rem;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+  }
+}
+.table-data tr th {
+  text-align: center;
+  margin-top: -1rem;
+  padding: 1rem;
+}
+
+.table-data td {
+  padding: 8px;
+  height: 3rem;
+  width: 16%;
+  cursor: pointer;
+
+  &:last-of-type {
+    width: 8%;
+    text-align: center;
+  }
+}
+
+.table-data th {
+  white-space: nowrap;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  color: #00759a;
+  height: 4rem;
+  background-color: #d8f3fa;
+}
+
+.table-data th:nth-child(1) {
+  width: 28%;
+}
+
+.table-data th:nth-child(2) {
+  width: 28%;
+}
+.table-data th:nth-child(3) {
+  width: 10%;
+}
+.table-data th:nth-child(4) {
+  width: 10%;
+}
+.table-data th:nth-child(5) {
+  width: 10%;
+}
+.table-data th:nth-child(6) {
+  width: 14%;
+}
+
+.table-data tr:nth-child(even) {
+  background-color: #f3fdff;
+  border-bottom: 1px solid #d8f3fa;
+}
+
+.table-data tr:nth-child(odd) {
+  background-color: #fff;
+  border-bottom: 1px solid #d8f3fa;
+}
+
+.table-data tr:hover {
+  background-color: rgb(226, 243, 247);
+}
+
+.table-pagination {
+  margin-top: 3rem;
+  font-size: 2rem;
+  &-page {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  &-button {
+    color: #066375;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: red;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

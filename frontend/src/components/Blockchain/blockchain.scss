@@ -1,0 +1,43 @@
+.rawData-container {
+  width: 80%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  &-main {
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3fdff;
+    margin-top: 5rem;
+  }
+  &-button {
+    margin-top: 5rem;
+  }
+}
+
+.list {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 0.2rem;
+  &-key {
+    display: flex;
+    width: 30%;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  &-description {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}

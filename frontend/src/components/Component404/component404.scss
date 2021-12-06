@@ -1,0 +1,15 @@
+.container404 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-text {
+    font-size: 5rem;
+    color: rgb(216, 212, 212);
+    width: 80%;
+    text-align: center;
+    line-height: 10rem;
+  }
+}
